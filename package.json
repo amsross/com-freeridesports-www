@@ -1,0 +1,33 @@
+{
+  "name": "com-freeridesports-www",
+  "version": "0.0.1-a",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/grunt-cli/bin/grunt",
+    "postinstall": "node node_modules/grunt-cli/bin/grunt build"
+  },
+  "engines": {
+    "node": "0.10.25"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amsross/com-freeridesports-www"
+  },
+  "author": "Matt Ross <matt@mattross.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amsross/com-freeridesports-www/issues"
+  },
+  "homepage": "https://github.com/amsross/com-freeridesports-www",
+  "dependencies": {},
+  "devDependencies": {
+    "jpegtran-bin": "0.2.8",
+    "optipng-bin": "0.3.11",
+    "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-imagemin": "0.7.1",
+    "grunt-contrib-less": "0.11.4",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-jekyll": "0.4.2"
+  }
+}
