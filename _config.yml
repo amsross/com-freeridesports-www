@@ -12,6 +12,7 @@ exclude:
   - Gruntfile.js
   - node_modules
   - README.md
+  - docker-compose.yml
 gems:
   - jekyll-sitemap
 keys:
@@ -22,3 +23,4 @@ source: .
 timezone: America/New_York
 url: http://www.freeridesports.com
 host: "0.0.0.0"
+
