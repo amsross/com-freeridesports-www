@@ -8,7 +8,9 @@ author_email: matt@mattross.io
 description: freeride sports
 destination: ./_site
 exclude:
+  - CNAME
   - package.json
+  - npm-shrinkwrap.json
   - Gruntfile.js
   - node_modules
   - README.md
