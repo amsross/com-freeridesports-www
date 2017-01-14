@@ -3,8 +3,8 @@
   "version": "0.0.1-a",
   "private": true,
   "scripts": {
-    "dev": "docker-compose up dev & node node_modules/grunt-cli/bin/grunt dev",
-    "build": "node node_modules/grunt-cli/bin/grunt && docker-compose up build",
+    "dev": "docker-compose run -p 4000:4000 dev & node node_modules/grunt-cli/bin/grunt dev",
+    "build": "node node_modules/grunt-cli/bin/grunt && docker-compose run build",
     "postinstall": "node node_modules/grunt-cli/bin/grunt"
   },
   "engines": {
