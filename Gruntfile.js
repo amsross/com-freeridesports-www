@@ -57,13 +57,6 @@ module.exports = function(grunt) {
 					dest: "assets/img/"
 				}]
 			}
-		},
-		jekyll: {
-			dist: {
-				options: {
-					config: "_config.yml"
-				}
-			}
 		}
 	});
 
@@ -71,7 +64,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
 	grunt.loadNpmTasks("grunt-contrib-less");
 	grunt.loadNpmTasks("grunt-contrib-watch");
-	grunt.loadNpmTasks("grunt-jekyll");
 
 	//Making grunt default to force in order not to break the project.
 	grunt.option("force", true);
@@ -85,10 +77,5 @@ module.exports = function(grunt) {
 	grunt.registerTask("dev", [
 		"default",
 		"watch"
-	]);
-
-	grunt.registerTask("build", [
-		"default",
-		"jekyll"
 	]);
 };

@@ -1,25 +1,26 @@
 #[freeridesports.com](http://www.freeridesports.com)
 
-1. Install global dependencies
-	```
-	gem install jekyll && npm install -g grunt-cli && npm install
-	```
+1. Install docker
 
-2. Fire listeners
+2. Start grunt and jekyll processes
 	```
-	grunt dev
-	jekyll serve --watch
+	npm run dev
 	```
 
 3. Do work...
 	```
 	vi <filename>
-	git add <filenames>
-	git commit
-	git push origin master
 	```
 
-5. Final build (optional)
+4. Final build (optional)
 	```
-	grunt build
+  npm run build
 	```
+
+5. Commit and deploy
+  ```
+  git add <filename>
+  git commit
+  git push origin master
+  ```
+
