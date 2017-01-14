@@ -53,11 +53,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: "_assets/img/",
-					src: [
-						"**/*.*",
-						"!**/Thumbs.db",
-						"!**/.DS_Store",
-					],
+					src: ["**/*.{png,jpg,gif}"],
 					dest: "assets/img/"
 				}]
 			}
